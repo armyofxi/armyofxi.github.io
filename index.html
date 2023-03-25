@@ -6,13 +6,24 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/jwplayer/8.6.2/jwplayer.js"></script>
 </head>
 <body>
-    <div id="player"></div>
+      <video
+
+        src="/xi.mp4"
+        width="720"
+        height="480"
+
+        id="container">
+
+    </video>
+
     <script type="text/javascript">
-        jwplayer("player").setup({
-            file: "xi.mp4",
-            width: 640,
-            height: 360
+
+        jwplayer("container").setup({
+
+            flashplayer: "/jwplayer/player.swf"
+
         });
+
     </script>
 </body>
 </html>
